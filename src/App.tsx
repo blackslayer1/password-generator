@@ -33,7 +33,7 @@ function App() {
         text.classList.remove('red');
         text.classList.remove('orange');
         text.classList.add('green');
-      } else if (value >= 90){
+      } else if (value >= 81){
         setStrength('Very Strong');
         text.classList.remove('red');
         text.classList.remove('orange');
