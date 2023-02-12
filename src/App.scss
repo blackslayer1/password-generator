@@ -1,0 +1,200 @@
+.App {
+  text-align: center;
+}
+
+body{
+  background-image: linear-gradient(to right top, #0061f4, #6438a1, #591d5b, #351227, #000000);
+  height: 100vh;
+}
+
+.custom-btn {
+  color: #fff;
+  width: 130px;
+  height: 40px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  top: 200px;
+}
+
+/* 7 */
+.btn-7 {
+  color: #21ebff;
+  line-height: 40px;
+  padding: 0;
+  border: none;
+}
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #21ebff;
+  box-shadow: 0 0 5px #21ebff;
+  transition: all 0.3s ease;
+}
+.btn-7:before{
+   height: 50%;
+   width: 2px;
+}
+.btn-7:after {
+  width: 20%;
+  height: 2px;
+}
+.btn-7:hover:before {
+  height: 100%;
+}
+.btn-7:hover:after {
+  width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #21ebff;
+  box-shadow: 0 0 5px #21ebff;
+  transition: all 0.3s ease;
+}
+.btn-7 span:before {
+  width: 2px;
+  height: 50%;
+}
+.btn-7 span:after {
+  height: 2px;
+  width: 20%;
+}
+.btn-7 span:hover:before {
+  height: 100%;
+}
+.btn-7 span:hover:after {
+  width: 100%;
+}
+
+h2{
+  position: relative;
+  top: 100px;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+textarea{
+  position: absolute;
+  top: 400px;
+  left: 480px;
+  width: 30%;
+  font-size: 25px;
+  height: 30px;
+  background: black;
+  color: rgb(0, 255, 0);
+  font-family: monospace;
+  resize: none;
+}
+
+.checkbox{
+  position: absolute;
+  bottom: 85px;
+  right: 450px;
+  label{
+    color: white;
+  }
+}
+
+.passLength{
+  position: absolute;
+  bottom: 160px;
+  left: 500px;
+  label{
+    color: white;
+    margin-right: 10px;
+  }
+  input{
+    width: 35px;
+    height: 30px;
+    font-size: 15px;
+    outline: none;
+  }
+}
+
+$progress-height: 1.4em;
+$progress-width: 150px;
+$progress-padding: 0.3em;
+$value-size: 1.2em;
+
+
+.neon-bar{
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.bar {
+  -webkit-appearance: none;
+  height: $progress-height;
+  width: $progress-width;
+
+  &::-webkit-progress-bar {
+    padding: $progress-padding;
+    border-radius: calc(#{$progress-height} / 2);
+    background: lighten(#111, 5);
+  }
+  &::-webkit-progress-value {
+    background: #03fcc2;
+    box-shadow: 0 0 0.6em lighten(#03fcc2, 2),
+      0 0 0.8em lighten(#03fcc2, 4);
+    border-radius: calc(#{$progress-height}/2);
+  }
+}
+
+.green {
+  color: #03fc56;
+  font-size: $value-size;
+  line-height: $progress-height;
+  letter-spacing: 1px;
+  text-shadow: 0 0 .3em darken(#03fc56, 1),
+    0 0 .6em darken(#03fc56, 6);
+  margin-left:.5em;
+  width: 50%;
+}
+
+.orange {
+  color: #fcba03;
+  font-size: $value-size;
+  line-height: $progress-height;
+  letter-spacing: 1px;
+  text-shadow: 0 0 .3em darken(#fcba03, 1),
+    0 0 .6em darken(#fcba03, 6);
+  margin-left:.5em;
+  width: 50%;
+}
+
+.red {
+  color: #fc0349;
+  font-size: $value-size;
+  line-height: $progress-height;
+  letter-spacing: 1px;
+  text-shadow: 0 0 .3em darken(#fc0349, 1),
+    0 0 .6em darken(#fc0349, 6);
+  margin-left:.5em;
+  width: 50%;
+}
